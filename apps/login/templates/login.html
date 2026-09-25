@@ -1,10 +1,14 @@
 {% extends 'base-login.html' %}
-{% block title %}Login | Sus{% endblock %}
+{% block title %}Login | Sus
+{% endblock %}
+{% load static %}
 {% block content %}
-    <div class="container mt-5 d-flex vh-100" align-items-center justify-content-center>
+    <div class="container mt-5 d-flex vh-100 align-items-center justify-content-center">
             <div class="row">
                 <figure class="d-flex justify-content-center mb-3">
-                    <img src="" alt="logo">
+                    <img src="{% static 'img/logo.png' %}" alt="logo" width="200">
+                    <h1 class="nome-hospital">
+                    Hospital<br>Ultimo Suspiro</h1>
                 </figure>
                 <form action="" method="POST">
                     <div class="col-12">
