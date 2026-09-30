@@ -6,12 +6,13 @@
     <div class="container mt-5 d-flex vh-100 align-items-center justify-content-center">
             <div class="row">
                 <figure class="d-flex justify-content-center mb-3">
-                    <img src="{% static 'img/logo.png' %}" alt="logo" width="200" class="img-logo img-fluid">
+                    <img src="{% static 'img/logo.png' %}" alt="logo" width="600" class="img-logo img-fluid">
                 </figure>
                 <h1 class="nome-hospital d-flex justify-content-center mb-5"> 
                     Hospital<br>Ultimo Suspiro</h1>
                 <div class="d-flex justify-content-center col-12">
                 <form action="" method="POST">
+                    {% csrf_token %}
                     <div class="col-12">
                         <label for="username" class="form-label">
                             Usuário:
